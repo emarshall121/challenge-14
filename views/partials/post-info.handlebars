@@ -1,10 +1,10 @@
 <article class="post card">
   <div class="title m-0 card-header">
-    <a class="m-0 card-header-title" href="{{post_url}}" target="_blank">{{title}}</a>
+    <a class="m-0 card-header-title has-background-dark has-text-white" href="{{post_url}}" target="_blank">{{title}}</a>
     {{!-- <span class="is-size-5">({{format_url post_url}})</span> --}}
   </div>
-  <div>
-    <a class="content mt-2">{{format_url post_url}}</a>
+  <div class="m-5">
+    <h4 class="content mt-2">{{format_url post_url}}</h4>
   </div>
   <div class="meta card-footer-item">
   {{user.username}} on {{format_date created_at}}
