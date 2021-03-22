@@ -17,7 +17,8 @@ const sess = {
   saveUninitialized: true,
   store: new SequelizeStore({
     db: sequelize
-  })
+  }),
+  rolling: true
 };
 
 app.use(session(sess));

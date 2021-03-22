@@ -5,22 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css" integrity="sha512-byErQdWdTqREz6DLAA9pCnLbdoGGhXfU6gm1c8bkf7F51JVmUBlayGe2A31VpXWQP+eiJ3ilTAZHCR3vmMyybA==" crossorigin="anonymous" />
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
+  <div>
+    <header class="navbar">
       <h1>
         <a href="/">Tech Blog</a>
       </h1>
-      <nav>
-        <a href="/">Home</a>
+      <nav class="my-2">
+        <a href="/" class=>Home</a>
         {{#if loggedIn}}
         <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
+        <button id="logout" class="button is-info">logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login" class="button is-info">login</a>
         {{/if}}
       </nav>
     </header>
